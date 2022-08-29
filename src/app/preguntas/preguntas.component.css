@@ -5,11 +5,12 @@
   margin-left: auto;
   margin-right: auto;
   font-family: "Charis SIL", serif;
-  color: aliceblue;
+  color: #181818;
 }
 
 .title {
   text-align: center;
+  color: aliceblue;
 }
 
 .form {
