@@ -3,26 +3,34 @@
 
 <form class="form">
     <div *ngFor="let data of preguntas; index as i" class="questions">
-        <h3 class="question">{{data.question}}</h3>
+        <h2 class="question">{{data.question}}</h2>
         <ul class="options">
             <li>
-                <input type="radio" id='cbox1' value={{data.answer1}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
-                <label for="cbox1">{{data.answer1}}</label>
+                <label>
+                    <input type="radio" id='cbox1' value={{data.answer1}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
+                    {{data.answer1}}
+                </label>
                 <div class="check"></div>
             </li>
             <li>
-                <input type="radio" id="cbox2" value={{data.answer2}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
-                <label for="cbox2">{{data.answer2}}</label>
+                <label>
+                    <input type="radio" id="cbox2" value={{data.answer2}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
+                    {{data.answer2}}
+                </label>
                 <div class="check"></div>
             </li>
             <li>
-                <input type="radio" id="cbox3" value={{data.answer3}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
-                <label for="cbox3">{{data.answer3}}</label>
+                <label>
+                    <input type="radio" id="cbox3" value={{data.answer3}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
+                    {{data.answer3}}
+                </label>
                 <div class="check"></div>
             </li>
             <li>
-                <input type="radio" id="cbox4" value={{data.answer4}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
-                <label for="cbox4">{{data.answer4}}</label>
+                <label>
+                    <input type="radio" id="cbox4" value={{data.answer4}} name={{i}} id="accent" [(ngModel)]="selects[i]" /> 
+                    {{data.answer4}}
+                </label>
                 <div class="check"></div>
             </li>
         </ul>        
